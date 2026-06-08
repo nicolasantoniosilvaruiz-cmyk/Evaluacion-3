@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eef2f5;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+header {
+  background-color: #18202f;
+  color: white;
+  text-align: center;
+  padding: 28px 16px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+  color: #4dd4ff;
+}
+
+.contenedor-principal {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.resumen-estacionamiento,
+.formulario-seccion,
+.lista-seccion {
+  background-color: white;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.resumen-estacionamiento h2,
+.formulario-seccion h2,
+.lista-seccion h2 {
+  margin-bottom: 14px;
+  color: #18202f;
+}
+
+.resumen-estacionamiento p {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.formulario-vehiculo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+}
+
+.campo-formulario label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.campo-formulario input,
+.campo-formulario select {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.checkbox-permanente {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+}
+
+.formulario-vehiculo button,
+.card-vehiculo button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #008f7a;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario-vehiculo button:hover,
+.card-vehiculo button:hover {
+  background-color: #006f5f;
+}
+
+.mensaje-error {
+  color: red;
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.mensaje-vacio {
+  color: #666;
+  font-style: italic;
+}
+
+.lista-vehiculos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.card-vehiculo {
+  width: 240px;
+  padding: 18px;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+}
+
+.card-vehiculo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #18202f;
+}
+
+.card-vehiculo p {
+  margin-bottom: 8px;
+}
+
+.vehiculo-permanente {
+  border-left: 8px solid #0066ff;
+}
+
+.vehiculo-temporal {
+  border-left: 8px solid #00aa55;
+}
+
+footer {
+  background-color: #18202f;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 24px;
+}

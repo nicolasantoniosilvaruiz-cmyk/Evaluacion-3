@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer>
-      <p>Footer al que mas adelante veo que le pongo</p>
+      <p>Evaluación Sumativa 3 - Programación Front End</p>
     </footer>
   );
 }

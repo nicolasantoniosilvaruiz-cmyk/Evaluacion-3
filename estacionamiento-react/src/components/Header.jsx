@@ -1,8 +1,8 @@
 function Header() {
   return (
     <header>
-      <h1>Sistema de Gestion de Estacionamientos</h1>
-      <p>Control de ingreso de autos y ocupación de espacios</p>
+      <h1>Sistema de Gestión de Estacionamientos</h1>
+      <p>Control de ingreso, ocupación y retiro de vehículos</p>
     </header>
   );
 }

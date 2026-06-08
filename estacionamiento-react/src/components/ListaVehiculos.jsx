@@ -1,8 +1,23 @@
-function ListaVehiculos() {
+import CardVehiculo from "./CardVehiculo";
+
+function ListaVehiculos({ vehiculos, eliminarVehiculo }) {
   return (
-    <section>
-      <h2>Vehiculos registrados</h2>
-      <p>Aqui se mostraran los vehículos ingresados</p>
+    <section className="lista-seccion">
+      <h2>Vehículos registrados</h2>
+
+      {vehiculos.length === 0 ? (
+        <p className="mensaje-vacio">No hay vehículos registrados.</p>
+      ) : (
+        <div className="lista-vehiculos">
+          {vehiculos.map((vehiculo) => (
+            <CardVehiculo
+              key={vehiculo.patente}
+              vehiculo={vehiculo}
+              eliminarVehiculo={eliminarVehiculo}
+            />
+          ))}
+        </div>
+      )}
     </section>
   );
 }
